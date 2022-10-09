@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 if (debugging) {
+	draw_set_halign(fa_left);
 	draw_set_color(c_white);
 	draw_text(10, 20, "Movement speed: " + string(movement_speed));
 	draw_text(10, 45, "Inaccuracy: " + string(inaccuracy));

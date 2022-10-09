@@ -3,9 +3,14 @@
 
 if (!activated) return;
 
+draw_set_halign(fa_right);
 draw_set_color(c_white);
 draw_set_font(fnt_ammo);
-draw_text(room_width - 200, room_height - 50, string(magazine_size_current) + " / " + string(current_ammo));
+draw_text(window_get_width() - 30, window_get_height() - 50, string(magazine_size_current) + " / " + string(current_ammo));
+
+var cam_x = (x / room_width) * window_get_width();
+var cam_y = (y / room_width) * window_get_height();
+draw_rectangle(cam_x - 20, cam_y + 40, cam_x + 20, cam_y + 20, false);
 
 //show reload animation above gun
 if (reloading) {
