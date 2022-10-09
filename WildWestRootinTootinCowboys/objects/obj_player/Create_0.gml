@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-depth = 0;
+//depth = 0;
 image_xscale = x_scale;
 image_yscale = y_scale;
 

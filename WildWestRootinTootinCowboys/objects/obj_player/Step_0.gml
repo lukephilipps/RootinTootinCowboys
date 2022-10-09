@@ -37,6 +37,7 @@ var look_angle = point_direction(x, y, mouse_x, mouse_y);
 if (down - up == 0 && right - left == 0)
 {
 	image_speed = 0;
+	image_index = 9; //arbitrary good looking frame, switch later
 }
 else
 {
@@ -58,5 +59,26 @@ else facing_left = false;
 if (facing_left) image_xscale = -x_scale;
 else image_xscale = x_scale;
 
-x += xVel;
-y += yVel;
+//determine movement with collision checking
+var predictedX = x + xVel;
+var predictedY = y + yVel;
+if (!place_meeting(predictedX, y, obj_wall)) {
+	x += xVel;
+}
+else {
+	predictedX = x;
+	while (!place_meeting(predictedX, y, obj_wall)) {
+		predictedX += sign(xVel);
+	}
+	x = predictedX - sign(xVel);
+}
+if (!place_meeting(x, predictedY, obj_wall)) {
+	y += yVel;
+}
+else {
+	predictedY = y;
+	while (!place_meeting(x, predictedY, obj_wall)) {
+		predictedY += sign(yVel);
+	}
+	y = predictedY - sign(yVel);
+}
