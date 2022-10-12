@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//handle_input();
-
 var up = (keyboard_check(ord("W")) || keyboard_check(vk_up));
 var down = (keyboard_check(ord("S")) || keyboard_check(vk_down));
 var left = (keyboard_check(ord("A")) || keyboard_check(vk_left));

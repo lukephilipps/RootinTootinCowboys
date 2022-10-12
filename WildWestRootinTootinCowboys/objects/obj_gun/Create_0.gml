@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+y = -100; //spawn offscreen, will probably change this later
+
 fire_rate *= obj_player.fire_rate_multiplier;
 reload_speed *= obj_player.reload_speed_multiplier;
 magazine_size = floor(obj_player.magazine_size_multiplier * magazine_size);
@@ -57,6 +59,7 @@ function reload_gun()
 function deactivate()
 {
 	activated = false;
+	y = -100; //move offscren
 }
 
 function activate()

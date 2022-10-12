@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_shotgun",
   "spriteId": {
-    "name": "spr_shotgun",
-    "path": "sprites/spr_shotgun/spr_shotgun.yy",
+    "name": "spr_pump_shotgun",
+    "path": "sprites/spr_pump_shotgun/spr_pump_shotgun.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,8 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-variance = 15;
-flying_speed = 16;
-bullet_lifetime = 1.5;
-
-event_inherited();
+colliding_with_player = false;

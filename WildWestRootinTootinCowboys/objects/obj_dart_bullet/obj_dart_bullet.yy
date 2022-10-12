@@ -29,7 +29,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"bounces","path":"objects/obj_bullet/obj_bullet.yy",},"objectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"value":"0",},
+  ],
   "parent": {
     "name": "Bullets",
     "path": "folders/Objects/Bullets.yy",

@@ -1,10 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (!activated) {
-	y = -100;
-}
-else {
+if (activated) {
 	x = obj_player.x;
 	y = obj_player.y;
 }

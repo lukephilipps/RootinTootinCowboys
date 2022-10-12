@@ -10,5 +10,8 @@ autofire = false;
 reload_speed = 2;
 multishot_amount = 6;
 gun_name = "Dart Shotgun";
+x_scale = 3;
+y_scale = 3;
+
 
 event_inherited();

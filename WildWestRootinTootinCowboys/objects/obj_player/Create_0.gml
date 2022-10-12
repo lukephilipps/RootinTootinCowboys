@@ -1,16 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//depth = 0;
 image_xscale = x_scale;
 image_yscale = y_scale;
-
 
 weapons = [instance_create_layer(x, y, "Instances", obj_gun)];
 weapons[1] = instance_create_layer(x, y, "Instances", obj_dart_gun)
 weapons[2] = instance_create_layer(x, y, "Instances", obj_shotgun)
 weapons[0].activate();
-
+/*
 function handle_input()
 {
 	walking = false;
@@ -57,7 +55,7 @@ function handle_input()
 		weapons[selected_weapon].reload_gun();
 	}
 }
-
+*/
 function cycle_weapon_left()
 {
 	deactivate_weapons();
@@ -99,6 +97,8 @@ function recalc_player_stats()
 	bullet_size_multiplier = 1;
 	multishot_multiplier = 1;
 	fire_rate_multiplier = 1;
+	extra_bounces = 0;
+	extra_pierces = 0;
 	
 	//add additive items first
 	for (var i = 0; i < array_length(passive_items); i++) {
@@ -120,6 +120,11 @@ function add_passive_item(item)
 	passive_index++;
 	
 	recalc_player_stats();
+}
+
+function take_damage(damage) 
+{
+	show_debug_message("took " + string(damage) + " damage");
 }
 
 //for testing purposes

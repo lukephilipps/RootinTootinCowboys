@@ -11,7 +11,10 @@ function scr_fire_gun()
 	if (room_speed / fire_rate < 1) alarm[0] = 1;
 	else alarm[0] = room_speed / fire_rate;
 
-	if (magazine_size_current == 0) return;
+	if (magazine_size_current == 0) {
+		scr_reload_gun();
+		return;
+	}
 
 	magazine_size_current--;
 
