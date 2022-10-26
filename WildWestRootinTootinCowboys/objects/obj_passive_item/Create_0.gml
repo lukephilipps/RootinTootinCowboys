@@ -8,7 +8,6 @@ function add_multiplicative_stats()
 
 function add_additive_stats()
 {
-	obj_player.fire_rate_multiplier += 1;
-	obj_player.magazine_size_multiplier += 1;
-	obj_player.bullet_size_multiplier += 1;
+	obj_player.multishot_multiplier += 1;
+	obj_player.inaccuracy -= .3;
 }

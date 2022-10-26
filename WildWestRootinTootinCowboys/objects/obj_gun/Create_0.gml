@@ -3,6 +3,14 @@
 
 y = -100; //spawn offscreen, will probably change this later
 
+//base stats stored for passive item calculations
+base_fire_rate = fire_rate;
+base_reload_speed = reload_speed;
+base_magazine_size = magazine_size;
+base_max_ammo = max_ammo;
+base_multishot_amount = multishot_amount;
+
+//stats changed according to player current stats
 fire_rate *= obj_player.fire_rate_multiplier;
 reload_speed *= obj_player.reload_speed_multiplier;
 magazine_size = floor(obj_player.magazine_size_multiplier * magazine_size);
@@ -16,7 +24,12 @@ image_xscale = x_scale;
 //to seperate player input from gun
 function detect_click()
 {
-	if (!activated || autofire) return;
+	if (!activated) return;
+	
+	if (magazine_size_current == 0) scr_reload_gun();
+	
+	if (autofire) return;
+	
 	scr_fire_gun();
 }
 

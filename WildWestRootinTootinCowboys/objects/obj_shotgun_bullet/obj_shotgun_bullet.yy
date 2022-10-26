@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_shotgun_bullet",
   "spriteId": {
-    "name": "spr_bullet",
-    "path": "sprites/spr_bullet/spr_bullet.yy",
+    "name": "spr_pointed_bullet",
+    "path": "sprites/spr_pointed_bullet/spr_pointed_bullet.yy",
   },
   "solid": false,
   "visible": true,

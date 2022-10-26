@@ -35,6 +35,7 @@ switch (enemy_type)
 		if (point_distance(x, y, player_x, player_y) < 250)
 		{
 			var total_speed = sqrt(abs(y_movement)^2 + abs(x_movement)^2);
+			
 			if (total_speed < 2)
 				alarm[0] = room_speed / 2;
 			else
@@ -46,8 +47,10 @@ switch (enemy_type)
 		if (!close_to_player)
 		{
 			//5 is an arbitrary num obtained by testing
-			x_movement = 5 * speed_modifier * cos(degtorad(move_direction));
-			y_movement = 5 * speed_modifier * -sin(degtorad(move_direction));
+			var chase_speed = 5;
+			
+			x_movement = chase_speed * speed_modifier * cos(degtorad(move_direction));
+			y_movement = chase_speed * speed_modifier * -sin(degtorad(move_direction));
 		}
 		// If enemy is close to player, ease towards them allowing player to dodge
 		else

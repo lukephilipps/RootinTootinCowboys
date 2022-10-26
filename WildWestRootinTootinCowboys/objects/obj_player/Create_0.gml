@@ -5,8 +5,10 @@ image_xscale = x_scale;
 image_yscale = y_scale;
 
 weapons = [instance_create_layer(x, y, "Instances", obj_gun)];
-weapons[1] = instance_create_layer(x, y, "Instances", obj_dart_gun)
+weapons[1] = instance_create_layer(x, y, "Instances", obj_stallion);
 weapons[2] = instance_create_layer(x, y, "Instances", obj_shotgun)
+weapons[3] = instance_create_layer(x, y, "Instances", obj_brass_blaster);
+weapons[4] = instance_create_layer(x, y, "Instances", obj_tumbler);
 weapons[0].activate();
 /*
 function handle_input()
@@ -86,7 +88,7 @@ function recalc_weapon_stats()
 //for use when a passive item is acquired
 function recalc_player_stats()
 {
-	//base stats
+	//hard coded base stats
 	movement_speed = 5;
 	inaccuracy = 1;
 	damage_multiplier = 1;

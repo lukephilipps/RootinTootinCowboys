@@ -22,7 +22,7 @@ bounces += obj_player.extra_bounces;
 pierces += obj_player.extra_pierces;
 
 bullet_size *= obj_player.bullet_size_multiplier;
-image_xscale *= obj_player.bullet_size_multiplier;
+image_xscale *= bullet_size;
 
 //point bullet in direction of player aim and add variance to it
 image_angle = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y);

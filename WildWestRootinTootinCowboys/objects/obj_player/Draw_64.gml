@@ -4,6 +4,7 @@
 if (debugging) {
 	draw_set_halign(fa_left);
 	draw_set_color(c_white);
+	draw_set_font(fnt_debug);
 	draw_text(10, 20, "Movement speed: " + string(movement_speed));
 	draw_text(10, 45, "Inaccuracy: " + string(inaccuracy));
 	draw_text(10, 70, "Damage multiplier: " + string(damage_multiplier));
