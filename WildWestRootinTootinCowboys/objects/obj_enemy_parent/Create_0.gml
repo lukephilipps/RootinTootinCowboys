@@ -9,12 +9,12 @@ texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
 //x_push and y_push amounts allow knockback to be added
 function take_damage(damage)
 {
-	var knockback = 3; //arbitrary num acquired by testing
+	var knockback = 2; //arbitrary num acquired by testing
 	
 	//knock enemy away from player, scaling with damage taken
 	if (can_take_knockback) {
-		x_movement += damage * knockback * -cos(degtorad(move_direction));
-		y_movement += damage * knockback * sin(degtorad(move_direction));
+		x_movement += (1 - knockback_resist) * (damage * knockback * -cos(degtorad(move_direction)));
+		y_movement += (1 - knockback_resist) * (damage * knockback * sin(degtorad(move_direction)));
 	}
 	
 	//damage enemy, kill them if no health

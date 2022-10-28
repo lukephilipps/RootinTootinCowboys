@@ -89,7 +89,7 @@ function recalc_weapon_stats()
 function recalc_player_stats()
 {
 	//hard coded base stats
-	movement_speed = 5;
+	movement_speed = 8;
 	inaccuracy = 1;
 	damage_multiplier = 1;
 	bullet_speed_multiplier = 1;
