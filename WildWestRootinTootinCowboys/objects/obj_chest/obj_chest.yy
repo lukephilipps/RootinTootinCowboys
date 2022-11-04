@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_chest",
   "spriteId": {
-    "name": "spr_dummy",
-    "path": "sprites/spr_dummy/spr_dummy.yy",
+    "name": "spr_ches",
+    "path": "sprites/spr_ches/spr_ches.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,8 +28,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"opened","varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},

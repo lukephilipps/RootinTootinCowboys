@@ -6,6 +6,6 @@ if (activated) {
 	y = obj_player.y;
 	
 	depth = -y - 40;
-	if (image_angle > 180) depth--;
+	if (image_angle > 165 || image_angle < 15) depth--;
 	else depth++;
 }

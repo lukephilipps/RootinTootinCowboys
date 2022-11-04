@@ -8,4 +8,5 @@ if (reloading) {
 	magazine_size_current += amount_to_reload;
 	current_ammo -= amount_to_reload;
 	reloading = false;
+	audio_play_sound(reload_finish_sfx, 10, false);
 }

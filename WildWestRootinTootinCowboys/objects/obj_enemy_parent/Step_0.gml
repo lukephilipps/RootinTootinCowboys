@@ -7,7 +7,7 @@
 // 2 - shooter
 // 3 - 
  
-if (!active) return;
+if (!active || obj_gamemanager.game_state != 0) return;
 
 var player_x = obj_player.x;
 var player_y = obj_player.y;

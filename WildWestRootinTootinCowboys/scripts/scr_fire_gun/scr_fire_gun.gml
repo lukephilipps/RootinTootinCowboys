@@ -22,4 +22,6 @@ function scr_fire_gun()
 	
 	for (var i = 0; i < ceil(multishot_amount); i++)
 		instance_create_layer(x_spawn_position, y_spawn_position, "Instances", bullet);
+		
+	audio_play_sound(fire_sfx, 10, false);
 }

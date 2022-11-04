@@ -11,6 +11,9 @@ function take_damage(damage)
 {
 	var knockback = 2; //arbitrary num acquired by testing
 	
+	//make enemy try to chase player again if it gets out of range
+	alarm[0] = room_speed / 10;
+	
 	//knock enemy away from player, scaling with damage taken
 	if (can_take_knockback) {
 		x_movement += (1 - knockback_resist) * (damage * knockback * -cos(degtorad(move_direction)));

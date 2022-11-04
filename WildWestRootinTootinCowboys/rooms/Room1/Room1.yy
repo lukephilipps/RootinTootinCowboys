@@ -47,6 +47,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_400C7C9","properties":[],"isDnd":false,"objectId":{"name":"obj_FoliageTerrain","path":"objects/obj_FoliageTerrain/obj_FoliageTerrain.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.27943107,"scaleY":0.27943107,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":2016.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F62C404","properties":[],"isDnd":false,"objectId":{"name":"obj_cactusEnemy","path":"objects/obj_cactusEnemy/obj_cactusEnemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.2621786,"scaleY":0.2621786,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1598.5004,"y":480.00003,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2AEF7860","properties":[],"isDnd":false,"objectId":{"name":"obj_cactusEnemy","path":"objects/obj_cactusEnemy/obj_cactusEnemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.2621786,"scaleY":0.2621786,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":992.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_42B3A13C","properties":[],"isDnd":false,"objectId":{"name":"obj_cactusEnemy","path":"objects/obj_cactusEnemy/obj_cactusEnemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.2621786,"scaleY":0.2621786,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1920.0,"y":1280.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"ts_Dirt","path":"tilesets/ts_Dirt/ts_Dirt.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":20,"SerialiseHeight":20,"TileCompressedData":[
 1,1,-18,2,2,3,5,-18,6,2,-2147483648,5,-18,6,2,-2147483648,5,-18,6,2,
@@ -86,6 +87,7 @@
     {"name":"inst_400C7C9","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1F62C404","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2AEF7860","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_42B3A13C","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

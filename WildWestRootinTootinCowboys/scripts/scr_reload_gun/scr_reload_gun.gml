@@ -4,6 +4,9 @@ function scr_reload_gun()
 {
 	if (!activated || reloading || magazine_size_current == magazine_size || current_ammo == 0) return;
 
+	audio_stop_sound(reload_start_sfx);
+	audio_play_sound(reload_start_sfx, 10, false);
+
 	reloading = true;
 	reload_step_count = 0;
 	percent_reloaded = 0;

@@ -3,3 +3,6 @@
 
 //audio_play_sound(m_TempTheme, 10, true);
 
+//window_set_fullscreen(false);
+
+health = 6;

@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+upixelH = shader_get_uniform(shdr_invincible, "pixelH");
+upixelW = shader_get_uniform(shdr_invincible, "pixelW");
+texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
+texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
+
 image_xscale = x_scale;
 image_yscale = y_scale;
 
@@ -99,6 +104,8 @@ function recalc_player_stats()
 	bullet_size_multiplier = 1;
 	multishot_multiplier = 1;
 	fire_rate_multiplier = 1;
+	dash_distance_multiplier = 1;
+	dash_recharge_multiplier = 1;
 	extra_bounces = 0;
 	extra_pierces = 0;
 	
@@ -110,6 +117,10 @@ function recalc_player_stats()
 	for (var i = 0; i < array_length(passive_items); i++) {
 		passive_items[i].add_multiplicative_stats();
 	}
+	
+	dash_recharge_time *= dash_recharge_multiplier;
+	dash_distance *= dash_distance_multiplier;
+	dash_time *= dash_time_multiplier;
 	
 	animation_speed = movement_speed / 5;
 	
@@ -126,7 +137,21 @@ function add_passive_item(item)
 
 function take_damage(damage) 
 {
-	show_debug_message("took " + string(damage) + " damage");
+	if (!invincible)
+	{
+		health -= damage;
+		
+		if (health <= 0)
+		{
+			deactivate_weapons();
+			obj_gamemanager.game_state = -1;
+			instance_destroy(self);
+		}
+		
+		i_frames = room_speed;
+		obj_camera_manager.add_shake(15);
+		audio_play_sound(sfx_player_damaged, 30, false);
+	}
 }
 
 //for testing purposes

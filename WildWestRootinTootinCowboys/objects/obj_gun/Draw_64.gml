@@ -6,7 +6,7 @@ if (!activated) return;
 draw_set_halign(fa_right);
 draw_set_color(c_white);
 draw_set_font(fnt_ammo);
-draw_text(window_get_width() - 40, window_get_height() - 80, string(magazine_size_current) + " / " + string(current_ammo));
+draw_text(view_wport[0] - 40, view_hport[0] - 80, string(magazine_size_current) + " / " + string(current_ammo));
 
 //show reload animation above gun
 if (reloading) {
