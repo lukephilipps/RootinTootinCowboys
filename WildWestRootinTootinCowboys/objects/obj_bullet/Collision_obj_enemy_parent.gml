@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (!other.active) return;
+
 //check if enemy has been hit already
 for (var i = 0; i < array_length(hit_enemies); i++) {
 	if (hit_enemies[i] == other) return;

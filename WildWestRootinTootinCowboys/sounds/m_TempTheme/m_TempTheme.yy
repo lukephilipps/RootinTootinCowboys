@@ -17,7 +17,7 @@
   "soundFile": "m_TempTheme.wav",
   "duration": 61.714287,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

@@ -8,7 +8,7 @@ max_ammo = 60;
 magazine_size = 4;
 recoil_angle_amount = 15;
 reload_speed = 2;
-multishot_amount = 6;
+multishot_amount = 7;
 x_scale = 3;
 y_scale = 3;
 

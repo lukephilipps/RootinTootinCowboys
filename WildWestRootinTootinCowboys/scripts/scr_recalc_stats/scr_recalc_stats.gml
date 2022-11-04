@@ -10,8 +10,8 @@ function scr_recalc_stats()
 	max_ammo = obj_player.max_ammo_multiplier * base_max_ammo;
 	
 	//add mag size to weapon if theres a new mag size
-	magazine_size_current += (obj_player.magazine_size_multiplier * base_magazine_size) - magazine_size;
-	magazine_size = obj_player.magazine_size_multiplier * base_magazine_size;
+	magazine_size_current += floor(obj_player.magazine_size_multiplier * base_magazine_size) - magazine_size;
+	magazine_size = floor(obj_player.magazine_size_multiplier * base_magazine_size);
 	
 	multishot_amount = base_multishot_amount * obj_player.multishot_multiplier;
 }

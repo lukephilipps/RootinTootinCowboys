@@ -28,10 +28,12 @@ function take_damage(damage)
 	took_damage = true;
 	alarm[1] = 5;
 	
-	show_debug_message("Remaining Health: " + string(hitpoints));
+	audio_stop_sound(take_damage_sfx);
+	audio_play_sound(take_damage_sfx, 10, false);
 }
 
 function kill()
 {
+	audio_play_sound(death_sfx, 10, false, 1, 0, random_range(.9, 1.2));
 	instance_destroy(self);
 }

@@ -141,13 +141,7 @@ if (is_dashing)
 	}
 	
 	//create cool effects
-	var afterimage = instance_create_layer(x, y, "Instances", obj_afterimage);
-	afterimage.sprite_index = sprite_index;
-	afterimage.image_index = image_index;
-	if (!facing_left) afterimage.image_xscale = x_scale;
-	else afterimage.image_xscale = -x_scale;
-	afterimage.image_yscale = y_scale;
-	afterimage.depth = depth + 1;
+	instance_create_layer(x, y, "Instances", obj_afterimage);
 }
 
 //determine movement with collision checking

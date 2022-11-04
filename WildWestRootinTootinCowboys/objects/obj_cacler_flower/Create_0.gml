@@ -10,4 +10,5 @@ function dash_effect()
 		var bullet = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_cacti_bullet);
 		bullet.reset_angle(i);
 	}
+	audio_play_sound(sfx_cactus_attack, 5, false, .7, .3);
 }

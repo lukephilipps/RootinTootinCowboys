@@ -10,10 +10,6 @@ image_xscale = x_scale;
 image_yscale = y_scale;
 
 weapons = [instance_create_layer(x, y, "Instances", obj_gun)];
-weapons[1] = instance_create_layer(x, y, "Instances", obj_stallion);
-weapons[2] = instance_create_layer(x, y, "Instances", obj_shotgun)
-weapons[3] = instance_create_layer(x, y, "Instances", obj_brass_blaster);
-weapons[4] = instance_create_layer(x, y, "Instances", obj_tumbler);
 weapons[0].activate();
 /*
 function handle_input()
@@ -133,6 +129,14 @@ function add_passive_item(item)
 	passive_index++;
 	
 	recalc_player_stats();
+}
+
+function add_gun(gun)
+{
+	weapons[array_length(weapons)] = gun;
+	deactivate_weapons();
+	weapons[array_length(weapons) - 1].activate();
+	selected_weapon = array_length(weapons) - 1;
 }
 
 function take_damage(damage) 

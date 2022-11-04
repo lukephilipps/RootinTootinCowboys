@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_passive_item",
-  "spriteId": {
-    "name": "spr_dummy",
-    "path": "sprites/spr_dummy/spr_dummy.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

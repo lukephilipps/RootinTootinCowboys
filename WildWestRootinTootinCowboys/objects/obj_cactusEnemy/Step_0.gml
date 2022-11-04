@@ -7,10 +7,14 @@
 // 2 - shooter
 // 3 - 
  
-if (!active || obj_gamemanager.game_state != 0) return;
+if (obj_gamemanager.game_state != 0) return;
 
 var player_x = obj_player.x;
 var player_y = obj_player.y;
+
+var distance_to_player = point_distance(x, y, player_x, player_y);
+if (!active && distance_to_player < 800) active = true;
+if (!active) return;
 
 //"look" at the player
 if (x < player_x) image_xscale = x_scale;
@@ -32,7 +36,6 @@ switch (enemy_type)
 		// If enemy close to player, set a flag that it is close
 		// The flag will change a few seconds after leaving "close to player"
 		// range so it doesn't jitter to run towards player quickly
-		var distance_to_player = point_distance(x, y, player_x, player_y);
 		if (distance_to_player < 250)
 		{
 			var total_speed = sqrt(abs(y_movement)^2 + abs(x_movement)^2);
@@ -47,10 +50,12 @@ switch (enemy_type)
 		//attack player if can
 		if (distance_to_player < 400 && can_attack)
 		{
+			audio_play_sound(sfx_cactus_charge, 20, false);
+			
 			image_index = 1;
 			attacking = true;
 			can_attack = false;
-			alarm[2] = room_speed * attack_recharge_time;
+			alarm[2] = room_speed * irandom_range(6, 10);
 			alarm[3] = room_speed * 2; //allow enemy to move again
 			alarm[4] = room_speed * 1; //shoot circular bullets
 		}
