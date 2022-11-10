@@ -6,6 +6,8 @@ upixelW = shader_get_uniform(shdr_outline, "pixelW");
 texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
 texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
 
+money_amount = irandom_range(3, 6);
+
 //x_push and y_push amounts allow knockback to be added
 function take_damage(damage)
 {
@@ -41,9 +43,29 @@ function kill()
 	effect_create_above(ef_smoke, x, y - 180, 2, c_white);
 	effect_create_above(ef_smoke, x, y - 220, 2, c_white);
 	
+	spawn_money();
+	
 	var body = instance_create_layer(x, y, "Instances", obj_enemy_body);
 	body.sprite_index = spr_DeadCactus;
 	body.image_xscale = image_xscale;	
 	body.image_yscale = image_yscale;
 	instance_destroy(self);
+}
+
+function spawn_money()
+{
+	for (var i = 0; i < floor(money_amount / 20); i++)
+	{
+		instance_create_layer(x, y, "Instances", obj_coin_gold);
+	}
+	money_amount = money_amount % 20;
+	for (var i = 0; i < floor(money_amount / 5); i++)
+	{
+		instance_create_layer(x, y, "Instances", obj_coin_silver);
+	}
+	money_amount = money_amount % 5;
+	for (var i = 0; i < money_amount; i++)
+	{
+		instance_create_layer(x, y, "Instances", obj_coin_bronze);
+	}
 }

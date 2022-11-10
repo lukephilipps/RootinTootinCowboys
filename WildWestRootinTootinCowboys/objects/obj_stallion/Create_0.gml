@@ -3,7 +3,7 @@
 
 gun_name = "Stallion";
 bullet = obj_stallion_bullet;
-fire_rate = 2;
+fire_rate = 1.6;
 max_ammo = 80;
 magazine_size = 6;
 recoil_angle_amount = 15;

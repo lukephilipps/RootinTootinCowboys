@@ -6,6 +6,8 @@ upixelW = shader_get_uniform(shdr_outline, "pixelW");
 texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
 texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
 
+image_yscale = y_scale;
+
 //x_push and y_push amounts allow knockback to be added
 function take_damage(damage)
 {
@@ -35,5 +37,24 @@ function take_damage(damage)
 function kill()
 {
 	audio_play_sound(death_sfx, 10, false, 1, 0, random_range(.9, 1.2));
+	spawn_money();
 	instance_destroy(self);
+}
+
+function spawn_money()
+{
+	for (var i = 0; i < floor(money_amount / 20); i++)
+	{
+		instance_create_layer(x, y, "Instances", obj_coin_gold);
+	}
+	money_amount = money_amount % 20;
+	for (var i = 0; i < floor(money_amount / 5); i++)
+	{
+		instance_create_layer(x, y, "Instances", obj_coin_silver);
+	}
+	money_amount = money_amount % 5;
+	for (var i = 0; i < money_amount; i++)
+	{
+		instance_create_layer(x, y, "Instances", obj_coin_bronze);
+	}
 }

@@ -17,5 +17,42 @@ item_array = [
 	3, //brass blaster
 	4, //cacler flower
 	5, //eight shooter
-	6 //omni ammo
+	6, //omni ammo
+	7, //hawk
+	8 //desert pepper
 ]
+
+function give_player_item(item)
+{
+	audio_play_sound(sfx_item, 10, false);
+	switch (item)
+	{
+		case 0:
+			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_shotgun));
+		break;
+		case 1:
+			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_stallion));
+		break;
+		case 2:
+			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_tumbler));
+		break;
+		case 3:
+			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_brass_blaster));
+		break;
+		case 4:
+			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_cacler_flower));
+		break;
+		case 5:
+			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_eight_shooter));
+		break;
+		case 6:
+			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_omni_ammo));
+		break;
+		case 7:
+			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_hawk));
+		break;
+		case 8:
+			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_desert_pepper));
+		break;
+	}
+}

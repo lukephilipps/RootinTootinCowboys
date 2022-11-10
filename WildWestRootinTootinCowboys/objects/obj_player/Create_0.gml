@@ -61,6 +61,7 @@ function handle_input()
 */
 function cycle_weapon_left()
 {
+	if (array_length(weapons) == 1) return;
 	deactivate_weapons();
 	selected_weapon--;
 	if (selected_weapon < 0) selected_weapon = array_length(weapons) - 1;
@@ -69,6 +70,7 @@ function cycle_weapon_left()
 
 function cycle_weapon_right()
 {
+	if (array_length(weapons) == 1) return; 
 	deactivate_weapons();
 	selected_weapon++;
 	if (selected_weapon > array_length(weapons) - 1) selected_weapon = 0;
