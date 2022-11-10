@@ -4,7 +4,7 @@
   "name": "sfx_item",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.51,
+  "volume": 0.31,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -17,7 +17,7 @@
   "soundFile": "sfx_item.mp3",
   "duration": 5.7208,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Interactables",
+    "path": "folders/Sounds/Interactables.yy",
   },
 }

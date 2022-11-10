@@ -39,6 +39,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"max_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"100",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"current_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"100",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"gun_name","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"Hawk",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"infinite_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"False",},
   ],
   "parent": {
     "name": "Weapons",

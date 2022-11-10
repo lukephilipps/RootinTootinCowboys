@@ -17,7 +17,7 @@
   "soundFile": "sfx_passive_pickup.wav",
   "duration": 0.503107,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Interactables",
+    "path": "folders/Sounds/Interactables.yy",
   },
 }

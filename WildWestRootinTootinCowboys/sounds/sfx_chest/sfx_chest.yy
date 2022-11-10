@@ -17,7 +17,7 @@
   "soundFile": "sfx_chest.wav",
   "duration": 0.741769,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Interactables",
+    "path": "folders/Sounds/Interactables.yy",
   },
 }

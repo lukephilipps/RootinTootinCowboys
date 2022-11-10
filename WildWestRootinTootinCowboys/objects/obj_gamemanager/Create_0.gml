@@ -3,7 +3,7 @@
 
 randomize();
 
-audio_play_sound(m_TempTheme, 1, true);
+//audio_play_sound(m_TempTheme, 1, true);
 
 //window_set_fullscreen(false);
 
@@ -19,7 +19,8 @@ item_array = [
 	5, //eight shooter
 	6, //omni ammo
 	7, //hawk
-	8 //desert pepper
+	8, //desert pepper
+	9 //big iron
 ]
 
 function give_player_item(item)
@@ -53,6 +54,9 @@ function give_player_item(item)
 		break;
 		case 8:
 			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_desert_pepper));
+		break;
+		case 9:
+			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_big_iron));
 		break;
 	}
 }

@@ -17,7 +17,7 @@
   "soundFile": "sfx_gun_shotgun.wav",
   "duration": 0.691678,
   "parent": {
-    "name": "Fire",
-    "path": "folders/Sounds/Fire.yy",
+    "name": "Guns",
+    "path": "folders/Sounds/Guns.yy",
   },
 }

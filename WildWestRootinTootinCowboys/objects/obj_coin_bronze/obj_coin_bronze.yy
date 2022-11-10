@@ -30,8 +30,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"x_scale","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"2.2",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"y_scale","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"2.2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"x_scale","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"1.8",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"y_scale","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"1.8",},
   ],
   "parent": {
     "name": "Money",

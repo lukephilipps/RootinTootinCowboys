@@ -38,7 +38,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Interactables",
-    "path": "folders/Objects/Interactables.yy",
+    "name": "Permanent",
+    "path": "folders/Objects/Interactables/Permanent.yy",
   },
 }

@@ -17,7 +17,7 @@
   "soundFile": "sfx_gun_stallion.wav",
   "duration": 1.448458,
   "parent": {
-    "name": "Fire",
-    "path": "folders/Sounds/Fire.yy",
+    "name": "Guns",
+    "path": "folders/Sounds/Guns.yy",
   },
 }

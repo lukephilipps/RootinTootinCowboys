@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"chase_speed","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":".03",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"x_scale","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"3.5",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"y_scale","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"3.5",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"x_scale","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"3.1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"y_scale","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"3.1",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"value","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"20",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"movement_speed","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"objectId":{"name":"obj_coin_parent","path":"objects/obj_coin_parent/obj_coin_parent.yy",},"value":"0",},
   ],

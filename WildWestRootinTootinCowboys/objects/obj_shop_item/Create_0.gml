@@ -61,6 +61,10 @@ switch (item)
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
+	case 9:
+		sprite_index = spr_big_iron;
+		cost = 150;
+	break;
 }
 
 event_inherited();
@@ -83,4 +87,10 @@ function interact()
 		obj_gamemanager.give_player_item(item);
 		instance_destroy(self);
 	}
+}
+
+//alows items not bought to be returned to the loot pool
+function return_item()
+{
+	array_push(obj_gamemanager.item_array, item);
 }

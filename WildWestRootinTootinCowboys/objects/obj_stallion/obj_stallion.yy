@@ -33,6 +33,7 @@
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"fire_sfx","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"sfx_gun_stallion",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"infinite_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"False",},
   ],
   "parent": {
     "name": "Weapons",

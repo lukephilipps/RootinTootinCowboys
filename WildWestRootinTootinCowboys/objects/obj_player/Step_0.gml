@@ -83,6 +83,7 @@ if (dash && can_dash)
 	alarm[0] = room_speed * dash_recharge_time;
 	alarm[1] = room_speed * dash_time;
 	
+	//this is trash rewrite this later why didnt i just store sign(xVel) and stuff
 	dash_direction = 0;
 	if (sign(xVel) == 1 && sign(yVel) == 1) dash_direction = 1;
 	if (sign(xVel) == 0 && sign(yVel) == 1) dash_direction = 2;

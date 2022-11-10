@@ -17,7 +17,7 @@
   "soundFile": "sfx_buy_item.wav",
   "duration": 0.692708,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Interactables",
+    "path": "folders/Sounds/Interactables.yy",
   },
 }

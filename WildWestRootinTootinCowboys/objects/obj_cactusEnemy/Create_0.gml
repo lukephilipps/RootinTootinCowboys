@@ -44,6 +44,7 @@ function kill()
 	effect_create_above(ef_smoke, x, y - 220, 2, c_white);
 	
 	spawn_money();
+	handle_ammo_spawn();
 	
 	var body = instance_create_layer(x, y, "Instances", obj_enemy_body);
 	body.sprite_index = spr_DeadCactus;
@@ -67,5 +68,16 @@ function spawn_money()
 	for (var i = 0; i < money_amount; i++)
 	{
 		instance_create_layer(x, y, "Instances", obj_coin_bronze);
+	}
+}
+
+function handle_ammo_spawn()
+{
+	var roll = irandom(99);
+	roll += hitpoints / 10;
+	
+	if (roll > 97)
+	{
+		instance_create_layer(x, y, "Instances", obj_ammo_large);
 	}
 }

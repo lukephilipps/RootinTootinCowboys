@@ -6,7 +6,13 @@ if (!activated) return;
 draw_set_halign(fa_right);
 draw_set_color(c_white);
 draw_set_font(fnt_ammo);
-draw_text(view_wport[0] - 40, view_hport[0] - 80, string(magazine_size_current) + " / " + string(current_ammo));
+if (!infinite_ammo)
+	draw_text(view_wport[0] - 40, view_hport[0] - 80, string(magazine_size_current) + " / " + string(current_ammo));
+else
+{
+	draw_text(view_wport[0] - 80, view_hport[0] - 80, string(magazine_size_current) + " / ");
+	draw_sprite(spr_infinity, 0, view_wport[0] - 60, view_hport[0] - 54);
+}
 
 //show reload animation above gun
 if (reloading) {

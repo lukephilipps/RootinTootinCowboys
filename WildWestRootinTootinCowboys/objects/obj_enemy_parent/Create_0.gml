@@ -38,6 +38,7 @@ function kill()
 {
 	audio_play_sound(death_sfx, 10, false, 1, 0, random_range(.9, 1.2));
 	spawn_money();
+	handle_ammo_spawn();
 	instance_destroy(self);
 }
 
@@ -56,5 +57,16 @@ function spawn_money()
 	for (var i = 0; i < money_amount; i++)
 	{
 		instance_create_layer(x, y, "Instances", obj_coin_bronze);
+	}
+}
+
+function handle_ammo_spawn()
+{
+	var roll = irandom(100);
+	roll += hitpoints / 10;
+	
+	if (roll > 98)
+	{
+		instance_create_layer(x, y, "Instances", obj_ammo_large);
 	}
 }
