@@ -20,7 +20,8 @@ item_array = [
 	6, //omni ammo
 	7, //hawk
 	8, //desert pepper
-	9 //big iron
+	9, //big iron
+	10 //bomb bow
 ]
 
 function give_player_item(item)
@@ -57,6 +58,9 @@ function give_player_item(item)
 		break;
 		case 9:
 			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_big_iron));
+		break;
+		case 10:
+			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_bomb_bow));
 		break;
 	}
 }

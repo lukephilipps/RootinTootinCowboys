@@ -14,4 +14,6 @@ function scr_recalc_stats()
 	magazine_size = floor(obj_player.magazine_size_multiplier * base_magazine_size);
 	
 	multishot_amount = base_multishot_amount * obj_player.multishot_multiplier;
+	
+	image_xscale = x_scale;
 }

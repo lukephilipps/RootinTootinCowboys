@@ -11,54 +11,7 @@ image_yscale = y_scale;
 
 weapons = [instance_create_layer(x, y, "Instances", obj_gun)];
 weapons[0].activate();
-/*
-function handle_input()
-{
-	walking = false;
-	
-	//move left
-	if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
-		hmovement += -movement_speed;
-		walking = true;
-	}
-	//move right
-	else if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
-		hmovement += movement_speed;
-		walking = true;
-	}
-	//move up
-	if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
-		vmovement += -movement_speed;
-		walking = true;
-	}
-	//move down
-	else if (keyboard_check(ord("S")) || keyboard_check(vk_down)) {
-		vmovement += movement_speed;
-		walking = true;
-	}
-	
-	//if player is moving in two directions at once, make diagonal speed 
-	//equal to movement_speed
-	if (abs(hmovement) > 0 && abs(vmovement) > 0) {
-		hmovement /= 1.41;
-		vmovement /= 1.41;
-	}
-	
-	//cycle weapon left button
-	if (mouse_wheel_down() || keyboard_check_pressed(ord("Z"))) {
-		cycle_weapon_left();
-	}
-	//cycle weapon right button
-	if (mouse_wheel_up() || keyboard_check_pressed(ord("C"))) {
-		cycle_weapon_right();
-	}
-	
-	//reload current gun
-	if (keyboard_check_pressed(ord("R"))) {
-		weapons[selected_weapon].reload_gun();
-	}
-}
-*/
+
 function cycle_weapon_left()
 {
 	if (array_length(weapons) == 1) return;
@@ -146,6 +99,7 @@ function take_damage(damage)
 	if (!invincible)
 	{
 		health -= damage;
+		invincible = true;
 		
 		if (health <= 0)
 		{

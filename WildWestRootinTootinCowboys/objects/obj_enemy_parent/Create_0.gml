@@ -11,15 +11,15 @@ image_yscale = y_scale;
 //x_push and y_push amounts allow knockback to be added
 function take_damage(damage)
 {
-	var knockback = 2; //arbitrary num acquired by testing
+	audio_stop_sound(take_damage_sfx);
 	
 	//make enemy try to chase player again if it gets out of range
 	alarm[0] = room_speed / 10;
 	
 	//knock enemy away from player, scaling with damage taken
 	if (can_take_knockback) {
-		x_movement += (1 - knockback_resist) * (damage * knockback * -cos(degtorad(move_direction)));
-		y_movement += (1 - knockback_resist) * (damage * knockback * sin(degtorad(move_direction)));
+		x_movement += (1 - knockback_resist) * (damage * 2 * -cos(degtorad(move_direction)));
+		y_movement += (1 - knockback_resist) * (damage * 2 * sin(degtorad(move_direction)));
 	}
 	
 	//damage enemy, kill them if no health
@@ -30,7 +30,6 @@ function take_damage(damage)
 	took_damage = true;
 	alarm[1] = 5;
 	
-	audio_stop_sound(take_damage_sfx);
 	audio_play_sound(take_damage_sfx, 10, false);
 }
 

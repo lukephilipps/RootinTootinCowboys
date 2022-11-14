@@ -65,6 +65,10 @@ switch (item)
 		sprite_index = spr_big_iron;
 		cost = 150;
 	break;
+	case 10:
+		sprite_index = spr_bomb_bow;
+		cost = 60;
+	break;
 }
 
 event_inherited();
@@ -80,9 +84,9 @@ function interact()
 		audio_play_sound(sfx_buy_item, 10, false);
 		if (gun) x_pos = x + (bbox_right - bbox_left) / 2;
 		else x_pos = x;
-		var coin = instance_create_layer(x_pos, y, "Instances", obj_coin_disappear);
-		coin.image_yscale = 3;
-		coin.image_xscale = 3;
+		var effect = instance_create_layer(x_pos, y, "Instances", obj_coin_disappear);
+		effect.image_yscale = 3;
+		effect.image_xscale = 3;
 		obj_gamemanager.money -= cost;
 		obj_gamemanager.give_player_item(item);
 		instance_destroy(self);

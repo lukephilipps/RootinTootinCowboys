@@ -16,6 +16,12 @@ var distance_to_player = point_distance(x, y, player_x, player_y);
 if (!active && distance_to_player < 800) active = true;
 if (!active) return;
 
+if (active && distance_to_player > 950)
+{
+	active = false;
+	return;
+}
+
 //"look" at the player
 if (x < player_x) image_xscale = x_scale;
 else image_xscale = -x_scale;
