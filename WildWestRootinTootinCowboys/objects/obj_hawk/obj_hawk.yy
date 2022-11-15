@@ -38,8 +38,9 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"recoil_angle_amount","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"16",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"max_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"100",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"current_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"100",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"gun_name","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"Hawk",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"item_name","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"Hawk",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"infinite_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"False",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"description","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"A new-age automatic revolver that can get the job done.",},
   ],
   "parent": {
     "name": "Weapons",

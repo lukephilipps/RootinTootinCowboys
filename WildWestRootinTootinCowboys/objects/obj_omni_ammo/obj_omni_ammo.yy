@@ -31,7 +31,10 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"item_name","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Omni-Ammo",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"description","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Increases most stats of bullets.\\nStrange bullets that seem to be more efficient in every way.",},
+  ],
   "parent": {
     "name": "Passive Items",
     "path": "folders/Objects/Passive Items.yy",

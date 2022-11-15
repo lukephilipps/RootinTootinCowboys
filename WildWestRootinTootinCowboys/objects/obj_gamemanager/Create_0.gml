@@ -24,43 +24,69 @@ item_array = [
 	10 //bomb bow
 ]
 
-function give_player_item(item)
+function give_player_item(item_num)
 {
 	audio_play_sound(sfx_item, 10, false);
-	switch (item)
+	var item;
+	var is_passive = false;
+	switch (item_num)
 	{
 		case 0:
-			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_shotgun));
+			item = instance_create_layer(0, -50, "Instances", obj_shotgun);
 		break;
 		case 1:
-			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_stallion));
+			item = instance_create_layer(0, -50, "Instances", obj_stallion);
 		break;
 		case 2:
-			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_tumbler));
+			item = instance_create_layer(0, -50, "Instances", obj_tumbler);
 		break;
 		case 3:
-			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_brass_blaster));
+			item = instance_create_layer(0, -50, "Instances", obj_brass_blaster);
 		break;
 		case 4:
-			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_cacler_flower));
+			item = instance_create_layer(0, -50, "Instances", obj_cacler_flower);
+			is_passive = true;
 		break;
 		case 5:
-			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_eight_shooter));
+			item = instance_create_layer(0, -50, "Instances", obj_eight_shooter);
+			is_passive = true;
 		break;
 		case 6:
-			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_omni_ammo));
+			item = instance_create_layer(0, -50, "Instances", obj_omni_ammo);
+			is_passive = true;
 		break;
 		case 7:
-			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_hawk));
+			item = instance_create_layer(0, -50, "Instances", obj_hawk);
 		break;
 		case 8:
-			obj_player.add_passive_item(instance_create_layer(0, -50, "Instances", obj_desert_pepper));
+			item = instance_create_layer(0, -50, "Instances", obj_desert_pepper);
+			is_passive = true;
 		break;
 		case 9:
-			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_big_iron));
+			item = instance_create_layer(0, -50, "Instances", obj_big_iron);
 		break;
 		case 10:
-			obj_player.add_gun(instance_create_layer(0, -50, "Instances", obj_bomb_bow));
+			item = instance_create_layer(0, -50, "Instances", obj_bomb_bow);
 		break;
 	}
+	
+	if (is_passive) obj_player.add_passive_item(item);
+	else obj_player.add_gun(item);
+	
+	item_to_draw = item;
+	
+	if (is_passive)
+	{
+		item_xscale = 2.5;
+		item_yscale = 2.5;
+	}
+	else
+	{
+		item_xscale = item.x_scale + .5;
+		item_yscale = item.y_scale + .5;
+	}
+	item_alpha = 5;
+	item_y_offset = 100;
+	draw_item = true;
+	alarm[0] = 4 * room_speed;
 }

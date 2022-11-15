@@ -4,8 +4,8 @@
 event_inherited();
 
 depth--;
-image_xscale = .4;
-image_yscale = .4;
+image_xscale = .25;
+image_yscale = .25;
 
 function interact()
 {

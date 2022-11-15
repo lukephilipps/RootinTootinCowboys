@@ -6,6 +6,7 @@ if (!activated) return;
 draw_set_halign(fa_right);
 draw_set_color(c_white);
 draw_set_font(fnt_ammo);
+draw_set_alpha(1);
 if (!infinite_ammo)
 	draw_text(view_wport[0] - 40, view_hport[0] - 80, string(magazine_size_current) + " / " + string(current_ammo));
 else

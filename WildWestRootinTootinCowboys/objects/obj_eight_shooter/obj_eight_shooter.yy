@@ -31,7 +31,10 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"item_name","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Eight Shooter",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"description","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Increases magazine size.\\nA few extra rounds in the chamber.",},
+  ],
   "parent": {
     "name": "Passive Items",
     "path": "folders/Objects/Passive Items.yy",
