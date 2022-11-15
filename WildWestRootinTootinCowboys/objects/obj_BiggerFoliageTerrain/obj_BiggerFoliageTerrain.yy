@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "FoliageTerrain",
-    "path": "folders/Objects/FoliageTerrain.yy",
+    "name": "Terrain_Folliage",
+    "path": "folders/Objects/Terrain_Folliage.yy",
   },
 }

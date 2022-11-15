@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_xscale = 0.3;
-image_yscale = 0.3;
+image_xscale = 0.2;
+image_yscale = 0.2;
 
-event_inherited();
+image_speed = 0;
+
+depth = -y;

@@ -108,7 +108,7 @@ function take_damage(damage)
 			instance_destroy(self);
 		}
 		
-		i_frames = room_speed;
+		i_frames = room_speed * 1.5;
 		obj_camera_manager.add_shake(15);
 		audio_play_sound(sfx_player_damaged, 30, false);
 	}

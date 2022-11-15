@@ -5,5 +5,5 @@ event_inherited();
 
 function add_multiplicative_stats()
 {
-	obj_player.magazine_size_multiplier *= 1.33;
+	obj_player.magazine_size_multiplier *= 1.34;
 }

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_FoliageTerrain",
+  "name": "obj_sign_right",
   "spriteId": {
-    "name": "spr_FoliageTerrain",
-    "path": "sprites/spr_FoliageTerrain/spr_FoliageTerrain.yy",
+    "name": "spr_sign_right",
+    "path": "sprites/spr_sign_right/spr_sign_right.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Terrain_Folliage",
-    "path": "folders/Objects/Terrain_Folliage.yy",
+    "name": "Terrain_Pathing",
+    "path": "folders/Objects/Terrain_Pathing.yy",
   },
 }

@@ -3,6 +3,7 @@
 
 if (game_state == 0)
 {
+	//draw money on screen
 	if (money < 50)
 	{
 		draw_sprite_ext(spr_coin_bronze, 0, view_wport[0] - 97, 35, 2, 2, 0, c_white, 1);
@@ -21,15 +22,16 @@ if (game_state == 0)
 	draw_set_color(c_white);
 	draw_text(view_wport[0] - 74, 27, "x " + string(money));
 	
+	//draw item desc on screen on item pickup
 	if (draw_item)
 	{
 		draw_sprite_ext(spr_textbox, 0, view_wport[0] * .5, view_hport[0] * .82 + item_y_offset, 1, 1, 0, c_white, item_alpha);
-		draw_sprite_ext(item_to_draw.sprite_index, 0, view_wport[0] * .2, view_hport[0] * .83 + item_y_offset, item_xscale, item_yscale, 0, c_white, item_alpha);
+		draw_sprite_ext(item_to_draw.sprite_index, 0, view_wport[0] * .25, view_hport[0] * .88 + item_y_offset, item_xscale, item_yscale, 0, c_white, item_alpha);
 		draw_set_color(c_black);
 		draw_set_alpha(item_alpha);
 		draw_set_font(fnt_item_title);
-		draw_text(view_wport[0] * .5, view_hport[0] * .75 + item_y_offset, item_to_draw.item_name);
+		draw_text(view_wport[0] * .47, view_hport[0] * .83 + item_y_offset, item_to_draw.item_name);
 		draw_set_font(fnt_item_desc);
-		draw_text(view_wport[0] * .35, view_hport[0] * .81 + item_y_offset, item_to_draw.description);
+		draw_text(view_wport[0] * .35, view_hport[0] * .87 + item_y_offset, item_to_draw.description);
 	}
 }

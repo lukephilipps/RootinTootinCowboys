@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "FoliageTerrain",
-    "path": "folders/Sprites/FoliageTerrain.yy",
+    "name": "Terrain_Folliage",
+    "path": "folders/Sprites/Terrain_Folliage.yy",
   },
 }
