@@ -13,10 +13,10 @@ var player_x = obj_player.x;
 var player_y = obj_player.y;
 
 var distance_to_player = point_distance(x, y, player_x, player_y);
-if (!active && distance_to_player < 1000) active = true;
+if (!active && distance_to_player < 850) active = true;
 if (!active) return;
 
-if (active && distance_to_player > 1200)
+if (active && distance_to_player > 950)
 {
 	active = false;
 	return;
