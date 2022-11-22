@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Interactables",
-    "path": "folders/Objects/Interactables.yy",
+    "path": "folders/Objects/Stage Building/Interactables.yy",
   },
 }

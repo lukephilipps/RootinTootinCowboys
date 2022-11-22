@@ -1,0 +1,47 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_spurred_boots",
+  "spriteId": {
+    "name": "spr_spurred_boots",
+    "path": "sprites/spr_spurred_boots/spr_spurred_boots.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_passive_item",
+    "path": "objects/obj_passive_item/obj_passive_item.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawning_spikes","varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spike_spawn","varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+  ],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"description","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Drops damaging spurs on dash.\\nBoots that can't seem to stop losing their spurs.",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"item_name","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Spurred Boots",},
+  ],
+  "parent": {
+    "name": "Passive Items",
+    "path": "folders/Objects/Player Items/Passive Items.yy",
+  },
+}

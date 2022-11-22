@@ -103,12 +103,10 @@ function take_damage(damage)
 		
 		if (health <= 0)
 		{
-			deactivate_weapons();
-			obj_gamemanager.game_state = -1;
-			instance_destroy(self);
+			obj_gamemanager.game_over_sequence();
 		}
 		
-		i_frames = room_speed * 1.5;
+		i_frames = room_speed * 1;
 		obj_camera_manager.add_shake(15);
 		audio_play_sound(sfx_player_damaged, 30, false);
 	}

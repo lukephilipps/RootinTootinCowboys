@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if (!activated) return;
-else if (reloading) image_speed = 0;
+else if (reloading || obj_gamemanager.game_state == -1) image_speed = 0;
 else if (on_cooldown) image_speed = 4;
 else image_speed = 1;
 

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Grass",
+  "name": "obj_grass",
   "spriteId": {
     "name": "spr_grass",
     "path": "sprites/spr_grass/spr_grass.yy",
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Terrain_Folliage",
-    "path": "folders/Objects/Terrain_Folliage.yy",
+    "name": "Folliage",
+    "path": "folders/Objects/Stage Building/Folliage.yy",
   },
 }

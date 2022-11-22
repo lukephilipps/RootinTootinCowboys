@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (!activated) return;
+if (!activated || obj_gamemanager.game_state == -1) return;
 
 if (reloading) {
 	reload_step_count++;

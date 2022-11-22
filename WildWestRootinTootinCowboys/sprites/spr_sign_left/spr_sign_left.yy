@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Terrain_Pathing",
-    "path": "folders/Sprites/Terrain_Pathing.yy",
+    "name": "Signs",
+    "path": "folders/Sprites/Terrain/Signs.yy",
   },
 }

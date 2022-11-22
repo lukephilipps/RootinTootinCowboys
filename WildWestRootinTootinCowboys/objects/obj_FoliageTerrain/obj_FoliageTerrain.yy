@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_FoliageTerrain",
   "spriteId": {
-    "name": "spr_FoliageTerrain",
-    "path": "sprites/spr_FoliageTerrain/spr_FoliageTerrain.yy",
+    "name": "spr_Folliage",
+    "path": "sprites/spr_Folliage/spr_Folliage.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Terrain_Folliage",
-    "path": "folders/Objects/Terrain_Folliage.yy",
+    "name": "Folliage",
+    "path": "folders/Objects/Stage Building/Folliage.yy",
   },
 }

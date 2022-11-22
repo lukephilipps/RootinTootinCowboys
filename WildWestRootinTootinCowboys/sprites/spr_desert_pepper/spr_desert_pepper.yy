@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Passive Items",
-    "path": "folders/Sprites/Passive Items.yy",
+    "path": "folders/Sprites/Items/Passive Items.yy",
   },
 }

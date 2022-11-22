@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_reload_gun()
 {
-	if (!activated || reloading || magazine_size_current == magazine_size || current_ammo == 0) return;
+	if (!activated || reloading || magazine_size_current == magazine_size || current_ammo == 0 || obj_gamemanager.game_state == -1) return;
 
 	audio_stop_sound(reload_start_sfx);
 	audio_play_sound(reload_start_sfx, 10, false);

@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Terrain_Pathing",
-    "path": "folders/Objects/Terrain_Pathing.yy",
+    "name": "Signs",
+    "path": "folders/Objects/Stage Building/Signs.yy",
   },
 }

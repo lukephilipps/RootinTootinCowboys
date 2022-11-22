@@ -41,6 +41,10 @@ function kill()
 {
 	audio_play_sound(death_sfx, 10, false, 1, 0, random_range(.9, 1.2));
 	
+	for (var i = 0; i < array_length(obj_player.passive_items); i++) {
+		obj_player.passive_items[i].enemy_death_effect(x, y);
+	}
+	
 	effect_create_above(ef_smoke, x, y - 100, 2, c_white);
 	effect_create_above(ef_smoke, x, y - 140, 2, c_white);
 	effect_create_above(ef_smoke, x, y - 180, 2, c_white);

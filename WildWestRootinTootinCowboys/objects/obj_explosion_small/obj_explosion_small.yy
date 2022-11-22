@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_explosion_small",
+  "spriteId": {
+    "name": "spr_explosion",
+    "path": "sprites/spr_explosion/spr_explosion.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_explosion",
+    "path": "objects/obj_explosion/obj_explosion.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"damage","path":"objects/obj_bullet/obj_bullet.yy",},"objectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"value":"5",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"triggers_rng_effects","path":"objects/obj_bullet/obj_bullet.yy",},"objectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"value":"False",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"bullet_size","path":"objects/obj_bullet/obj_bullet.yy",},"objectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"value":"6",},
+  ],
+  "parent": {
+    "name": "Bullets",
+    "path": "folders/Objects/Player Items/Weapons/Bullets.yy",
+  },
+}

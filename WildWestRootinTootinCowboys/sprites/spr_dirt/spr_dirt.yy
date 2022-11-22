@@ -92,7 +92,7 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Terrain_Folliage",
-    "path": "folders/Sprites/Terrain_Folliage.yy",
+    "name": "Folliage",
+    "path": "folders/Sprites/Terrain/Folliage.yy",
   },
 }

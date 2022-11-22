@@ -46,6 +46,6 @@
   ],
   "parent": {
     "name": "Weapons",
-    "path": "folders/Objects/Weapons.yy",
+    "path": "folders/Objects/Player Items/Weapons.yy",
   },
 }

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (colliding_with_player) {
+if (colliding_with_player && obj_gamemanager.game_state == 0) {
 	shader_set(shdr_outline);
 	shader_set_uniform_f(upixelW, texelW);
 	shader_set_uniform_f(upixelH, texelH);

@@ -69,6 +69,26 @@ switch (item)
 		sprite_index = spr_bomb_bow;
 		cost = 60;
 	break;
+	case 11:
+		sprite_index = spr_spurred_boots;
+		cost = 25;
+	break;
+	case 12:
+		sprite_index = spr_twin_holsters;
+		cost = 50;
+	break;
+	case 13:
+		sprite_index = spr_gunpowder_ammo;
+		cost = 100;
+	break;
+	case 14:
+		sprite_index = spr_spirit_of_the_mole;
+		cost = 65;
+	break;
+	case 15:
+		sprite_index = spr_sniper;
+		cost = 70;
+	break;
 }
 
 event_inherited();

@@ -36,6 +36,8 @@ function take_damage(damage)
 function kill()
 {
 	audio_play_sound(death_sfx, 10, false, 1, 0, random_range(.9, 1.2));
+	for (var i = 0; i < array_length(obj_player.passive_items); i++)
+		obj_player.passive_items[i].enemy_death_effect(x, y);
 	spawn_money();
 	handle_ammo_spawn();
 	instance_destroy(self);

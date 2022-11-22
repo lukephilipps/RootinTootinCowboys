@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_fire_gun()
 {
-	if (on_cooldown) return;
+	if (on_cooldown || obj_gamemanager.game_state != 0) return;
 	
 	if (reloading && magazine_size_current > 0) reloading = false;
 	if (reloading && magazine_size_current == 0) return;

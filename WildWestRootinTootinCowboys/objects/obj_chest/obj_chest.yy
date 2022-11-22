@@ -37,6 +37,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Permanent",
-    "path": "folders/Objects/Interactables/Permanent.yy",
+    "path": "folders/Objects/Stage Building/Interactables/Permanent.yy",
   },
 }

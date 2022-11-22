@@ -39,7 +39,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"flying_speed","path":"objects/obj_bullet/obj_bullet.yy",},"objectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"value":"7",},
   ],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Bullets/Player.yy",
+    "name": "Bullets",
+    "path": "folders/Objects/Player Items/Weapons/Bullets.yy",
   },
 }

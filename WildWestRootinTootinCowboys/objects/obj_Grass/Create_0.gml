@@ -9,4 +9,4 @@ image_index = irandom(4);
 
 if (irandom(1) == 0) image_xscale = -image_xscale;
 
-depth = -y + 100;
+depth = 51;

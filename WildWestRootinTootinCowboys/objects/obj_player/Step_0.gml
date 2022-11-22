@@ -40,7 +40,7 @@ var look_angle = point_direction(x, y, mouse_x, mouse_y);
 if (down - up == 0 && right - left == 0 && !is_dashing)
 {
 	image_speed = 0;
-	image_index = 9; //arbitrary good looking frame, switch later
+	image_index = 0; //arbitrary good looking frame, switch later
 }
 else
 {
@@ -50,11 +50,11 @@ else
 //set player look animation based on mouse pos
 if (look_angle > 15 && look_angle < 165)
 {
-	sprite_index = spr_player_walk_rb;
+	sprite_index = spr_player_walk2;
 }
 else
 {
-	sprite_index = spr_player_walk_r;
+	sprite_index = spr_player_walk2;
 }
 
 //flip player on x-axis based on mouse pos
@@ -103,7 +103,7 @@ if (dash && can_dash)
 //If player is currently in a dash
 if (is_dashing)
 {
-	image_speed = 3;
+	image_speed = 5;
 	
 	switch (dash_direction) 
 	{
@@ -148,22 +148,22 @@ if (is_dashing)
 //determine movement with collision checking
 var predictedX = x + xVel;
 var predictedY = y + yVel;
-if (!place_meeting(predictedX, y, obj_wall)) {
+if (!place_meeting(predictedX, y, obj_wall) && !place_meeting(predictedX, y, obj_crate)) {
 	x += xVel;
 }
 else {
 	predictedX = x;
-	while (!place_meeting(predictedX, y, obj_wall)) {
+	while (!place_meeting(predictedX, y, obj_wall) && !place_meeting(predictedX, y, obj_crate)) {
 		predictedX += sign(xVel);
 	}
 	x = predictedX - sign(xVel);
 }
-if (!place_meeting(x, predictedY, obj_wall)) {
+if (!place_meeting(x, predictedY, obj_wall) && !place_meeting(x, predictedY, obj_crate)) {
 	y += yVel;
 }
 else {
 	predictedY = y;
-	while (!place_meeting(x, predictedY, obj_wall)) {
+	while (!place_meeting(x, predictedY, obj_wall) && !place_meeting(x, predictedY, obj_crate)) {
 		predictedY += sign(yVel);
 	}
 	y = predictedY - sign(yVel);

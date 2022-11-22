@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Pickups",
-    "path": "folders/Objects/Interactables/Pickups.yy",
+    "path": "folders/Objects/Stage Building/Interactables/Pickups.yy",
   },
 }

@@ -37,6 +37,6 @@
   ],
   "parent": {
     "name": "Passive Items",
-    "path": "folders/Objects/Passive Items.yy",
+    "path": "folders/Objects/Player Items/Passive Items.yy",
   },
 }

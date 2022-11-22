@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Terrain_Folliage",
-    "path": "folders/Objects/Terrain_Folliage.yy",
+    "name": "Folliage",
+    "path": "folders/Objects/Stage Building/Folliage.yy",
   },
 }

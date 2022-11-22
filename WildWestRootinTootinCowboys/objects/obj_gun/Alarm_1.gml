@@ -1,7 +1,7 @@
 /// @description Gun reload alarm
 // You can write your code in this editor
 
-if (!activated) return;
+if (!activated || obj_gamemanager.game_state == -1) return;
 
 if (reloading) {
 	if (!infinite_ammo)

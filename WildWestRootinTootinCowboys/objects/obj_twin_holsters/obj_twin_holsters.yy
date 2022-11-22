@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_twin_holsters",
+  "spriteId": {
+    "name": "spr_twin_holsters",
+    "path": "sprites/spr_twin_holsters/spr_twin_holsters.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_passive_item",
+    "path": "objects/obj_passive_item/obj_passive_item.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"item_name","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Twin Holsters",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"description","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Reduces reload time.\\nThey're not actually twins, but telling them that would hurt their feelings.",},
+  ],
+  "parent": {
+    "name": "Passive Items",
+    "path": "folders/Objects/Player Items/Passive Items.yy",
+  },
+}

@@ -15,3 +15,13 @@ function dash_effect()
 {
 	
 }
+
+function enemy_death_effect(enemy_x, enemy_y)
+{
+	
+}
+
+function bullet_rng_effects(bullet, gun_used)
+{
+	
+}

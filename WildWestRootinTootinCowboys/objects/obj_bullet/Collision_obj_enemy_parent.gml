@@ -11,6 +11,10 @@ for (var i = 0; i < array_length(hit_enemies); i++) {
 //deal damage to enemy
 other.take_damage(damage);
 
+if (triggers_rng_effects)
+	for (var i = 0; i < array_length(obj_player.passive_items); i++)
+		obj_player.passive_items[i].bullet_rng_effects(self, obj_player.weapons[obj_player.selected_weapon]);
+
 //if bullet is piercing, mark hit enemy and reduce remaining pierces
 if (pierces > 0) {
 	pierces--;
