@@ -9,7 +9,7 @@ for (var i = 0; i < array_length(hit_enemies); i++) {
 }
 
 //deal damage to enemy
-other.take_damage(damage);
+other.take_damage(self, damage);
 
 //if bullet is piercing, mark hit enemy and reduce remaining pierces
 if (pierces > 0) {

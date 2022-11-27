@@ -4,7 +4,7 @@
 if (!other.active) return;
 
 //deal damage to enemy
-other.take_damage(damage);
+other.take_damage(self, damage);
 
 instance_create_layer(x, y, "Instances", obj_explosion);
 audio_stop_sound(sfx_sizzle);

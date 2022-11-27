@@ -50,7 +50,7 @@ else
 //set player look animation based on mouse pos
 if (look_angle > 15 && look_angle < 165)
 {
-	sprite_index = spr_player_walk2;
+	sprite_index = spr_player_walkback;
 }
 else
 {
@@ -168,3 +168,16 @@ else {
 	}
 	y = predictedY - sign(yVel);
 }
+
+/*
+if (abs(xVel) > 0 || abs(yVel) > 0)
+{
+	step_count++;
+	if (step_count > 30 - movement_speed - (15 * is_dashing)) 
+	{
+		audio_play_sound(sfx_player_footstep, 1, false);
+		step_count = 0;
+	}
+}
+else audio_stop_sound(sfx_player_footstep);
+*/

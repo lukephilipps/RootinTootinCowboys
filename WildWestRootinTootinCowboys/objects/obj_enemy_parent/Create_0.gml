@@ -7,11 +7,14 @@ texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
 texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
 
 image_yscale = y_scale;
+image_xscale = x_scale;
 
 //x_push and y_push amounts allow knockback to be added
-function take_damage(damage)
+function take_damage(bullet, damage)
 {
 	audio_stop_sound(take_damage_sfx);
+	
+	close_to_player = true;
 	
 	//make enemy try to chase player again if it gets out of range
 	alarm[0] = room_speed / 10;

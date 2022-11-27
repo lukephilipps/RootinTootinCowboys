@@ -6,27 +6,18 @@ upixelW = shader_get_uniform(shdr_outline, "pixelW");
 texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
 texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
 
-image_yscale = y_scale;
-image_xscale = x_scale;
-
 original_x = x;
 original_y = y;
 
-money_amount += irandom_range(0, 2);
+money_amount += irandom_range(0, random_money_amount);
 
 //x_push and y_push amounts allow knockback to be added
-function take_damage(damage)
+function take_damage(bullet, damage)
 {
 	audio_stop_sound(sfx_cactus_take_damage);
 	
 	//make enemy try to chase player again if it gets out of range
 	alarm[0] = room_speed / 10;
-	
-	//knock enemy away from player, scaling with damage taken
-	if (can_take_knockback) {
-		x_movement += (1 - knockback_resist) * (damage * 2 * -cos(degtorad(move_direction)));
-		y_movement += (1 - knockback_resist) * (damage * 2 * sin(degtorad(move_direction)));
-	}
 	
 	//damage enemy, kill them if no health
 	hitpoints -= damage;
@@ -41,7 +32,8 @@ function take_damage(damage)
 
 function kill()
 {
-	audio_play_sound(sfx_crate_break, 10, false, .8, 0, random_range(.9, 1.2));
+	audio_stop_sound(sfx_crate_break);
+	audio_play_sound(sfx_crate_break, 10, false, .6, 0, random_range(.9, 1.2));
 	
 	spawn_money();
 	handle_ammo_spawn();

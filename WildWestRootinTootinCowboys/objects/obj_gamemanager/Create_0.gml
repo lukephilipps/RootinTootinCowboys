@@ -3,7 +3,7 @@
 
 randomize();
 
-audio_play_sound(m_theme, 1, true);
+audio_play_sound(m_theme, 1, true, .7);
 
 //window_set_fullscreen(false);
 
@@ -26,7 +26,11 @@ item_array = [
 	12, //twin holsters
 	13, //gunpowder ammo
 	14, //mole spirit
-	15 //sniper
+	15, //sniper
+	16, //hardened ammo
+	17, //piercing ammo
+	18, //rubber ammo
+	19 //shotgun ammo
 ]
 
 function give_player_item(item_num)
@@ -92,6 +96,22 @@ function give_player_item(item_num)
 		case 15:
 			item = instance_create_layer(0, -50, "Instances", obj_sniper);
 		break;
+		case 16:
+			item = instance_create_layer(0, -50, "Instances", obj_hardened_ammo);
+			is_passive = true;
+		break;
+		case 17:
+			item = instance_create_layer(0, -50, "Instances", obj_piercing_ammo);
+			is_passive = true;
+		break
+		case 18:
+			item = instance_create_layer(0, -50, "Instances", obj_rubber_ammo);
+			is_passive = true;
+		break;
+		case 19:
+			item = instance_create_layer(0, -50, "Instances", obj_shotgun_ammo);
+			is_passive = true;
+		break;
 	}
 	
 	if (is_passive) obj_player.add_passive_item(item);
@@ -106,8 +126,8 @@ function give_player_item(item_num)
 	}
 	else
 	{
-		item_xscale = item.x_scale + .5;
-		item_yscale = item.y_scale + .5;
+		item_xscale = item.x_scale + .1;
+		item_yscale = item.y_scale + .1;
 	}
 	item_alpha = 5;
 	item_y_offset = 100;

@@ -20,6 +20,7 @@ current_ammo = max_ammo;
 multishot_amount *= obj_player.multishot_multiplier
 
 image_xscale = x_scale;
+image_yscale = y_scale;
 
 //to seperate player input from gun
 function detect_click()

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (show_tip && !message_shown)
+if (show_tip)
 {
 	draw_set_font(fnt_debug);
 	draw_set_halign(fa_center);

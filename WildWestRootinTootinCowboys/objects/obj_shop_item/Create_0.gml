@@ -7,8 +7,6 @@ item = obj_gamemanager.item_array[index];
 array_delete(obj_gamemanager.item_array, index, 1);
 
 image_speed = 0;
-image_xscale = 3;
-image_yscale = 3;
 
 switch (item)
 {
@@ -64,10 +62,12 @@ switch (item)
 	case 9:
 		sprite_index = spr_big_iron;
 		cost = 150;
+		gun = true;
 	break;
 	case 10:
 		sprite_index = spr_bomb_bow;
 		cost = 60;
+		gun = true;
 	break;
 	case 11:
 		sprite_index = spr_spurred_boots;
@@ -88,7 +88,35 @@ switch (item)
 	case 15:
 		sprite_index = spr_sniper;
 		cost = 70;
+		gun = true;
 	break;
+	case 16:
+		sprite_index = spr_hardened_ammo;
+		cost = 70;
+	break;
+	case 17:
+		sprite_index = spr_piercing_ammo;
+		cost = 65;
+	break;
+	case 18:
+		sprite_index = spr_rubber_ammo;
+		cost = 65;
+	break;
+	case 19:
+		sprite_index = spr_shotgun_ammo;
+		cost = 80;
+	break;
+}
+
+if (gun)
+{
+	image_xscale = .2;
+	image_yscale = .2;
+}
+else
+{
+	image_xscale = 3;
+	image_yscale = 3;
 }
 
 event_inherited();

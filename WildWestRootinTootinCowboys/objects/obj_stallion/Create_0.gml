@@ -7,8 +7,6 @@ fire_rate = 1.6;
 max_ammo = 80;
 magazine_size = 6;
 recoil_angle_amount = 15;
-reload_speed = 2;
-x_scale = 3;
-y_scale = 3;
+reload_speed = 1.6;
 
 event_inherited();

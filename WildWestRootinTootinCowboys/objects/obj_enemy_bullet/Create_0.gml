@@ -8,7 +8,7 @@ image_xscale = bullet_size;
 
 function reset_angle(angle)
 {
-	image_angle = angle;
+	image_angle = angle + irandom_range(-variance, variance);
 	hspeed = flying_speed * cos(degtorad(image_angle));
 	vspeed = -flying_speed * sin(degtorad(image_angle));
 	

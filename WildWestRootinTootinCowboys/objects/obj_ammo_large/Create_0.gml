@@ -11,7 +11,7 @@ function interact()
 {
 	var gun = obj_player.weapons[obj_player.selected_weapon];
 	
-	if (gun.infinite_ammo || gun.current_ammo == gun.max_ammo) return;
+	if (gun.infinite_ammo || gun.current_ammo + gun.magazine_size_current == gun.max_ammo + gun.magazine_size ) return;
 	
 	gun.current_ammo = gun.max_ammo;
 	gun.magazine_size_current = gun.magazine_size;

@@ -8,8 +8,6 @@ max_ammo = 160;
 magazine_size = 40;
 recoil_angle_amount = 4;
 autofire = true;
-reload_speed = 5;
-x_scale = 3;
-y_scale = 3;
+reload_speed = 4.2;
 
 event_inherited();

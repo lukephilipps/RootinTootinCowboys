@@ -6,4 +6,4 @@ with (obj_text)
 	show_tip = false;
 }
 show_tip = true;
-alarm[0] = room_speed * 5;
+alarm[0] = room_speed * 3.5;
