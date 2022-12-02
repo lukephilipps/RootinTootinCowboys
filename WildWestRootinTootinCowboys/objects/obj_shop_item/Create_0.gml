@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -y;
+
 //select a random item
 var index = irandom(array_length(obj_gamemanager.item_array) - 1);
 item = obj_gamemanager.item_array[index];
@@ -11,120 +13,108 @@ image_speed = 0;
 switch (item)
 {
 	case 0:
-		sprite_index = spr_pump_shotgun;
+		sprite = spr_pump_shotgun;
 		cost = 25;
 		gun = true;
 	break;
 	case 1:
-		sprite_index = spr_stallion;
+		sprite = spr_stallion;
 		cost = 30;
 		gun = true;
 	break;
 	case 2:
-		sprite_index = spr_tumbler;
+		sprite = spr_tumbler;
 		cost = 50;
 		gun = true;
 	break;
 	case 3:
-		sprite_index = spr_brass_blaster;
+		sprite = spr_brass_blaster;
 		cost = 80;
 		gun = true;
 	break;
 	case 4:
-		sprite_index = spr_cacler_flower;
+		sprite = spr_cacler_flower;
 		cost = 30;
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
 	case 5:
-		sprite_index = spr_eight_shooter;
+		sprite = spr_eight_shooter;
 		cost = 30;
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
 	case 6:
-		sprite_index = spr_omni_ammo;
+		sprite = spr_omni_ammo;
 		cost = 80;
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
 	case 7:
-		sprite_index = spr_hawk;
+		sprite = spr_hawk;
 		cost = 25;
 		gun = true;
 	break;
 	case 8:
-		sprite_index = spr_desert_pepper;
+		sprite = spr_desert_pepper;
 		cost = 30;
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
 	case 9:
-		sprite_index = spr_big_iron;
+		sprite = spr_big_iron;
 		cost = 150;
 		gun = true;
 	break;
 	case 10:
-		sprite_index = spr_bomb_bow;
+		sprite = spr_bomb_bow;
 		cost = 60;
 		gun = true;
 	break;
 	case 11:
-		sprite_index = spr_spurred_boots;
+		sprite = spr_spurred_boots;
 		cost = 25;
 	break;
 	case 12:
-		sprite_index = spr_twin_holsters;
+		sprite = spr_twin_holsters;
 		cost = 50;
 	break;
 	case 13:
-		sprite_index = spr_gunpowder_ammo;
+		sprite = spr_gunpowder_ammo;
 		cost = 100;
 	break;
 	case 14:
-		sprite_index = spr_spirit_of_the_mole;
+		sprite = spr_spirit_of_the_mole;
 		cost = 65;
 	break;
 	case 15:
-		sprite_index = spr_sniper;
+		sprite = spr_sniper;
 		cost = 70;
 		gun = true;
 	break;
 	case 16:
-		sprite_index = spr_hardened_ammo;
+		sprite = spr_hardened_ammo;
 		cost = 70;
 	break;
 	case 17:
-		sprite_index = spr_piercing_ammo;
+		sprite = spr_piercing_ammo;
 		cost = 65;
 	break;
 	case 18:
-		sprite_index = spr_rubber_ammo;
+		sprite = spr_rubber_ammo;
 		cost = 65;
 	break;
 	case 19:
-		sprite_index = spr_shotgun_ammo;
+		sprite = spr_shotgun_ammo;
 		cost = 80;
 	break;
 }
-
-if (gun)
-{
-	image_xscale = .2;
-	image_yscale = .2;
-}
-else
-{
-	image_xscale = 3;
-	image_yscale = 3;
-}
-
-event_inherited();
 
 function interact()
 {
 	if (obj_gamemanager.money < cost) 
 	{
+		audio_play_sound(sfx_cancel, 10, false);
 		return;
 	}
 	else
@@ -140,6 +130,9 @@ function interact()
 		instance_destroy(self);
 	}
 }
+
+scale = 64 / sprite_get_height(sprite);
+x_draw_pos = gun ? x - ((sprite_get_width(sprite) * scale) / 2) : x;
 
 //alows items not bought to be returned to the loot pool
 function return_item()

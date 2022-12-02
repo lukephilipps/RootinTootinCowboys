@@ -7,3 +7,6 @@ if (draw_item)
 	item_alpha -= .02;
 	if (item_alpha <= 0) draw_item = false;
 }
+
+coin_animation += .05;
+if (got_money) coin_animation += .2;

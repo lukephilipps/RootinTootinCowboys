@@ -6,4 +6,6 @@ obj_gamemanager.money += value;
 var coin = instance_create_layer(x, y, "Instances", obj_coin_disappear);
 coin.image_yscale = image_yscale;
 coin.image_xscale = image_xscale;
+obj_gamemanager.got_money = true;
+obj_gamemanager.alarm[2] = 30;
 instance_destroy(self);

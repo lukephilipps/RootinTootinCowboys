@@ -3,8 +3,6 @@
 
 if (obj_gamemanager.game_state != 0) return;
 
-//essentially get the mean between mouse pos and player pos, twice
-//this places the camera focus 1/4th of the way from the player to the mouse
 x = (mouse_x + 7 * obj_player.x) / 8;
 y = (mouse_y + 7 * obj_player.y) / 8;
 

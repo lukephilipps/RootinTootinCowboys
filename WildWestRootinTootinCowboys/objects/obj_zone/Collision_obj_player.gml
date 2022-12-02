@@ -10,4 +10,5 @@ if (!activated)
 	audio_sound_gain(m_shop, 0, 0);
 	audio_sound_gain(m_shop, .7, 1000);
 	activated = true;
+	obj_camera_manager.in_shop = true;
 }

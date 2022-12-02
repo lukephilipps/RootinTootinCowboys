@@ -40,6 +40,7 @@ function kill()
 		obj_player.passive_items[i].enemy_death_effect(x, y);
 	spawn_money();
 	handle_ammo_spawn();
+	handle_heart_spawn();
 	instance_destroy(self);
 }
 
@@ -69,5 +70,16 @@ function handle_ammo_spawn()
 	if (roll > 98)
 	{
 		instance_create_layer(x, y, "Instances", obj_ammo_large);
+	}
+}
+
+function handle_heart_spawn()
+{
+	var roll = irandom(100);
+	roll += hitpoints / 10;
+	
+	if (roll > 98)
+	{
+		instance_create_layer(x, y - 40, "Instances", obj_heart_pickup);
 	}
 }
