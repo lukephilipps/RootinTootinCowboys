@@ -17,8 +17,12 @@ if (debugging) {
 	draw_text(10, 245, "Fire rate multiplier: " + string(fire_rate_multiplier));
 }
 
-var xdraw = 10;
-for(var i = 0; i < array_length(passive_items); i++) {
-	draw_sprite(passive_items[i].sprite_index, -1 , xdraw + passive_items[i].sprite_width / 2, camera_get_view_height(view_camera[0]) - 30);
-	xdraw += 10 + passive_items[i].sprite_width;
+if (obj_gamemanager.game_state == 0)
+{
+	draw_set_alpha(1);
+	var xdraw = 10;
+	for(var i = 0; i < array_length(passive_items); i++) {
+		draw_sprite(passive_items[i].sprite_index, -1 , xdraw + passive_items[i].sprite_width / 2, camera_get_view_height(view_camera[0]) - 30);
+		xdraw += 10 + passive_items[i].sprite_width;
+	}
 }

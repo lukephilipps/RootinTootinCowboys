@@ -50,6 +50,11 @@ function kill()
 	spawn_money();
 	handle_ammo_spawn();
 	handle_heart_spawn();
+	var body = instance_create_layer(x, y - 60, "Instances", obj_enemy_body);
+	body.sprite_index = spr_rat_hat;
+	body.image_xscale = image_xscale;	
+	body.image_yscale = image_yscale;
+	body.y_movement += 4;
 	instance_destroy(self);
 }
 

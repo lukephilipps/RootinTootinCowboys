@@ -32,7 +32,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"bullet","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"obj_big_iron_bullet",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"multishot_amount","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"9",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"max_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"30",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"max_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"12",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"current_ammo","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"3",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"reload_speed","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"1",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"magazine_size","path":"objects/obj_gun/obj_gun.yy",},"objectId":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},"value":"3",},

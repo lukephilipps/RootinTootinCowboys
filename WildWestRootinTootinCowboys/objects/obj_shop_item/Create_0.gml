@@ -19,47 +19,39 @@ switch (item)
 	break;
 	case 1:
 		sprite = spr_stallion;
-		cost = 30;
+		cost = 50;
 		gun = true;
 	break;
 	case 2:
 		sprite = spr_tumbler;
-		cost = 50;
+		cost = 80;
 		gun = true;
 	break;
 	case 3:
 		sprite = spr_brass_blaster;
-		cost = 80;
+		cost = 110;
 		gun = true;
 	break;
 	case 4:
 		sprite = spr_cacler_flower;
-		cost = 30;
-		image_xscale = 2;
-		image_yscale = 2;
+		cost = 50;
 	break;
 	case 5:
 		sprite = spr_eight_shooter;
-		cost = 30;
-		image_xscale = 2;
-		image_yscale = 2;
+		cost = 80;
 	break;
 	case 6:
 		sprite = spr_omni_ammo;
-		cost = 80;
-		image_xscale = 2;
-		image_yscale = 2;
+		cost = 180;
 	break;
 	case 7:
 		sprite = spr_hawk;
-		cost = 25;
+		cost = 45;
 		gun = true;
 	break;
 	case 8:
 		sprite = spr_desert_pepper;
-		cost = 30;
-		image_xscale = 2;
-		image_yscale = 2;
+		cost = 60;
 	break;
 	case 9:
 		sprite = spr_big_iron;
@@ -68,20 +60,20 @@ switch (item)
 	break;
 	case 10:
 		sprite = spr_bomb_bow;
-		cost = 60;
+		cost = 70;
 		gun = true;
 	break;
 	case 11:
 		sprite = spr_spurred_boots;
-		cost = 25;
+		cost = 40;
 	break;
 	case 12:
 		sprite = spr_twin_holsters;
-		cost = 50;
+		cost = 70;
 	break;
 	case 13:
 		sprite = spr_gunpowder_ammo;
-		cost = 100;
+		cost = 150;
 	break;
 	case 14:
 		sprite = spr_spirit_of_the_mole;
@@ -89,12 +81,12 @@ switch (item)
 	break;
 	case 15:
 		sprite = spr_sniper;
-		cost = 70;
+		cost = 90;
 		gun = true;
 	break;
 	case 16:
 		sprite = spr_hardened_ammo;
-		cost = 70;
+		cost = 80;
 	break;
 	case 17:
 		sprite = spr_piercing_ammo;
@@ -106,7 +98,11 @@ switch (item)
 	break;
 	case 19:
 		sprite = spr_shotgun_ammo;
-		cost = 80;
+		cost = 100;
+	break;
+	case 20:
+		sprite = spr_heart_up;
+		cost = 70;
 	break;
 }
 

@@ -46,7 +46,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"knockback_resist","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"1",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hitpoints","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"20",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"active","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"False",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"money_amount","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"5",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"money_amount","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"4",},
   ],
   "parent": {
     "name": "Enemies",

@@ -32,7 +32,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"item_name","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Shotgun Roudns",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"item_name","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Shotgun Rounds",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"description","path":"objects/obj_passive_item/obj_passive_item.yy",},"objectId":{"name":"obj_passive_item","path":"objects/obj_passive_item/obj_passive_item.yy",},"value":"Turns every gun into a shotgun.\\nWhy didn't anyone think of this sooner?",},
   ],
   "parent": {

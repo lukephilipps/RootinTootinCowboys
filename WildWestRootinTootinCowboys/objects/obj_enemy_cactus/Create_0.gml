@@ -6,8 +6,6 @@ upixelW = shader_get_uniform(shdr_outline, "pixelW");
 texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
 texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
 
-money_amount = irandom_range(2, 5);
-
 //x_push and y_push amounts allow knockback to be added
 function take_damage(bullet, damage)
 {

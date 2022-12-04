@@ -42,3 +42,11 @@ if (game_state == 0)
 		draw_text(view_wport[0] * .35, view_hport[0] * .87 + item_y_offset, item_to_draw.description);
 	}
 }
+if (show_gameover)
+{
+	draw_set_halign(fa_center);
+	draw_set_font(fnt_item_title_2);
+	draw_text(view_wport[0] / 2, view_hport[0] / 2, "Game over...");
+	draw_set_font(fnt_item_title);
+	draw_text(view_wport[0]/ 2, view_hport[0] / 2 + 80, "Press anything to restart");
+}

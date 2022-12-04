@@ -17,7 +17,7 @@ item_array = [
 	3, //brass blaster
 	4, //cacler flower
 	5, //eight shooter
-	6, //omni ammo
+	//6, //omni ammo TOO POWERFUFL
 	7, //hawk
 	8, //desert pepper
 	9, //big iron
@@ -30,7 +30,8 @@ item_array = [
 	16, //hardened ammo
 	17, //piercing ammo
 	18, //rubber ammo
-	19 //shotgun ammo
+	19, //shotgun ammo
+	20 //lizard heart
 ]
 
 function give_player_item(item_num)
@@ -110,6 +111,10 @@ function give_player_item(item_num)
 		break;
 		case 19:
 			item = instance_create_layer(0, -50, "Instances", obj_shotgun_ammo);
+			is_passive = true;
+		break;
+		case 20:
+			item = instance_create_layer(0, -50, "Instances", obj_lizard_heart);
 			is_passive = true;
 		break;
 	}

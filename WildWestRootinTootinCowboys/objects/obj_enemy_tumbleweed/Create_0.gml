@@ -41,6 +41,12 @@ function kill()
 	spawn_money();
 	handle_ammo_spawn();
 	handle_heart_spawn();
+	var body = instance_create_layer(x, y, "Instances", obj_enemy_body);
+	body.sprite_index = spr_tumbleweed_dead;
+	body.image_xscale = image_xscale;	
+	body.image_yscale = image_yscale;
+	body.x_movement += (1 - knockback_resist) * (2 * -cos(degtorad(move_direction)));
+	body.y_movement += (1 - knockback_resist) * (2 * sin(degtorad(move_direction)));
 	instance_destroy(self);
 }
 

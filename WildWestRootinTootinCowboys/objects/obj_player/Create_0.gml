@@ -12,6 +12,8 @@ image_yscale = y_scale;
 weapons = [instance_create_layer(x, y, "Instances", obj_gun)];
 weapons[0].activate();
 
+passive_items = [];
+
 function cycle_weapon_left()
 {
 	if (array_length(weapons) == 1) return;
@@ -96,6 +98,7 @@ function add_gun(gun)
 
 function take_damage(damage) 
 {
+	if (obj_gamemanager.game_state != 0) return;
 	if (!invincible)
 	{
 		health -= damage;

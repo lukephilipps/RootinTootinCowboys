@@ -3,7 +3,7 @@
 
 if (!active)
 {
-	with (obj_enemy_mouse_shotgun) 
+	with (obj_enemy_rat) 
 	{
 		active = true;
 		alarm[2] = 30;
