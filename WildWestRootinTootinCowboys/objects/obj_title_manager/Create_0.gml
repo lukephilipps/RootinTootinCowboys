@@ -1,8 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (draw_press) 
-{
-	audio_stop_all();
-	room_goto(0);
-}
+audio_play_sound(m_title, 10, true);
+alarm[0] = 60;

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_cac_2",
+  "name": "obj_player_credits",
   "spriteId": {
-    "name": "spr_cac",
-    "path": "sprites/spr_cac/spr_cac.yy",
+    "name": "spr_player_walk2",
+    "path": "sprites/spr_player_walk2/spr_player_walk2.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Title",
-    "path": "folders/Objects/Title.yy",
+    "name": "Credits",
+    "path": "folders/Objects/Credits.yy",
   },
 }

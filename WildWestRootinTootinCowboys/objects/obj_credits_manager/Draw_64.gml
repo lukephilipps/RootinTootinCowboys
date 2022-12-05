@@ -31,7 +31,7 @@ draw_set_font(fnt_item_title_2);
 draw_text(room_width / 2, room_height + 1100 - text_pos, "Lucas Garner");
 
 draw_set_font(fnt_item_title);
-draw_text(room_width / 2, room_height + 1300 - text_pos, "everyone also did stuff outside their jobs lmao");
+draw_text(room_width / 2, room_height + 1300 - text_pos, "Thanks everyone for a great semester.");
 
 if (draw_thanks)
 {
